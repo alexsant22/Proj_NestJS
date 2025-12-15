@@ -1,0 +1,25 @@
+### Lista de Endpoints HTTP ###
+
+### Retorna uma lista de todos os usuários.
+GET http://localhost:3000/users/buscar
+
+### Retorna um usuário específico pelo ID.
+GET http://localhost:3000/users/buscar/1
+
+### Cria um novo usuário.
+POST http://localhost:3000/users/criar
+Content-Type: application/json
+
+{
+  "name": "Nome do Usuário",
+  "email": "email@dominio.com",
+  "dataNascimento": "1990-01-01",
+  "cpf": "529.982.247-25",
+  "telefone": "(11) 99999-9999"
+}
+
+### Atualiza um usuário existente pelo ID.
+PATCH http://localhost:3000/users/atualizar/1
+
+### Remove um usuário específico pelo ID.
+DELETE http://localhost:3000/users/deletar/1
